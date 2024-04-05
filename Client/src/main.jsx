@@ -8,7 +8,11 @@ import DeliveryBoyForm from './components/DeliveryDashboard/DiliveryDashboard'
 import HomePage from './components/HomePage/homePage'
 import DeliveryBoy from './components/DeliveryBoyLogin/DeliveryBoyLogin'
 import ContactUs from './components/ContactUs/ContactUs'
+<<<<<<< HEAD
 import AdminDashboard from './components/AdminDashboard/AdminDashboard'
+=======
+import ShoppingCategory from './components/ShoppingMain/ShoppingMain.jsx';
+>>>>>>> 9f9facb7d18311efd421d8eb85908c6e89c6a8e7
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,8 +23,12 @@ const router = createBrowserRouter(
     <Route path="Home" element={<HomePage/>} />
     <Route path="loginDB" element={<DeliveryBoy/>} />
     <Route path="Contact" element={<ContactUs/>} />
+<<<<<<< HEAD
     <Route path="AdminDashboard" element={<AdminDashboard/>} />
   
+=======
+    <Route path="ShopCategory" element={<ShoppingCategory/>}/>
+>>>>>>> 9f9facb7d18311efd421d8eb85908c6e89c6a8e7
     </Route>
   )
 );
