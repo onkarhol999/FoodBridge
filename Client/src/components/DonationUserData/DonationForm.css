@@ -1,11 +1,27 @@
 .donationForm{
     padding: 3% 15%;
+    background-size: cover;
+    background-position: center;
+    /* color: white; */
+}
+
+.img{
+    background: linear-gradient(rgba(0,0,0,0.5), #009688), url('../images/donationForm.jpg');
+    background-position: center;
+    border-radius: 15px;
 }
 
 .form{
+    border: 2px solid #009688;
+    border-radius: 15px;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.form h2{
+    font-family: 'Roboto';
+    font-weight: 900;
 }
 
 .form form{
@@ -27,19 +43,22 @@
     font-weight: 700;
     font-family: 'poppins';
 }
-
-.button{
+.btncontainer{
+    justify-content: center;
+    text-align: center;
+}
+#submitbutton{
     color: white;
-    margin-left: 40%;
-    padding: 2% 3%;
+    padding: 2% 2%;
+    max-width: 50%;
     font-family: "Montserrat";
     font-weight: 700;
     border-radius: 15px;
-    background-color: #87fd87;
+    background-color: #009688;
 }
 
-.button:hover{
-    color: #050505;
-    border: 2px solid #87fd87;
+#submitbutton:hover{
+    color: #009688;
+    border: 2px solid #009688;
     background: transparent ;
 }
