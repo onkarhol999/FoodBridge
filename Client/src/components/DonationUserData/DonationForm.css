@@ -1,0 +1,45 @@
+.donationForm{
+    padding: 3% 15%;
+}
+
+.form{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form form{
+    text-align: left;
+    padding: 2% 15%;
+}
+
+.form-control:focus {
+    border-color: #87fd87;
+    box-shadow: 0 0 0 0.2rem rgba(39, 229, 102, 0.25);
+} 
+
+.form-check-input:focus{
+    border-color: #87fd87;
+    box-shadow: 0 0 0 0.2rem rgba(39, 229, 102, 0.25);
+}
+
+.form-label{
+    font-weight: 700;
+    font-family: 'poppins';
+}
+
+.button{
+    color: white;
+    margin-left: 40%;
+    padding: 2% 3%;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border-radius: 15px;
+    background-color: #87fd87;
+}
+
+.button:hover{
+    color: #050505;
+    border: 2px solid #87fd87;
+    background: transparent ;
+}

@@ -1,16 +1,17 @@
 import './App.css'
-import DeliveryInfo from './components/DeliveryDashboard/DiliveryDashboard'
-import DonationAdmin from './components/DonationAdmin/DonationAdmin.jsx';
-// import Navbar from './components/navbar/Navbar'
+import Navbar from './components/navbar/Navbar'
 // import DonationForm from './components/DonationUserData/DonationForm.jsx';
+import HomePage from './components/HomePage/homePage.jsx';
+import Footer from './components/Footer/Footer.jsx';
+
 
 function App() {
   return (
     <>
-      {/* <Navbar/> */}
+      <Navbar/>
+      <HomePage/>
       {/* <DonationForm/> */}
-      <DeliveryInfo/>
-      <DonationAdmin/>
+      <Footer/>
     </>
   )
 }
