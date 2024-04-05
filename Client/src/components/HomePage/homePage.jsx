@@ -82,7 +82,7 @@ function homePage() {
         <section id="socials">
             <div className="collaboration">
                 <h2>Our Collaborations</h2>
-                <p>We are in contact with some plants too whome we send the waste food for other benificiary productions</p>
+                {/* <p>We are in contact with some plants too whome we send the waste food for other benificiary productions</p> */}
                 <div className="row biogas">
                     <div className="col-lg-4">
                         <img src={biogasPlant} className='colabImg' alt="" />
