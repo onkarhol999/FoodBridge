@@ -1,0 +1,63 @@
+main{
+    padding: 3% 10%;
+    justify-content: center;
+    text-align: center;
+}
+
+main h2{
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: #4b793d;
+}
+
+main .row .col{
+    justify-content: center;
+    align-items: center;
+}
+
+.itemcard{
+    width: 100%;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    background-color: #845bf5;
+}
+
+.itemcard:hover{
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img-top{
+    max-height: 20rem;
+}
+
+.card-title{
+    font-family: 'Poppins';
+    text-decoration: underline;
+    color: #87fd87;
+}
+
+.card-subtitle{
+    font-family: 'poppins';
+    font-weight: 700;
+    
+}
+.card-text{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: white;
+}
+
+.buyBtn{
+    padding: 2% 3%;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border-radius: 15px;
+    background-color: #87fd87;
+}
+
+.buyBtn:hover{
+    color: #87fd87;
+    border: 2px solid #87fd87;
+    background: transparent ;
+}

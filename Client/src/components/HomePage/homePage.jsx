@@ -4,11 +4,11 @@ import car1 from '../images/CarouselImages/Car1.jpg';
 import car2 from '../images/CarouselImages/Car2.jpg';
 import car3 from '../images/CarouselImages/Car3.jpg';
 import car4 from '../images/CarouselImages/Car4.jpg';
-import donateFood from '../images/HelpOption/DonateFood.jpg';
-import shopNow from '../images/HelpOption/ShopNow.jpeg';
-import biogasPlant from '../images/SocialsImg/BiogasPlant.jpg';
-import ethanolPlant from '../images/SocialsImg/ethanol.jpeg';
-import fertilizerPlant from '../images/SocialsImg/fertilizerPlant.jpeg';
+// import donateFood from '../images/HelpOption/DonateFood.jpg';
+// import shopNow from '../images/HelpOption/ShopNow.jpeg';
+// import biogasPlant from '../images/SocialsImg/BiogasPlant.jpg';
+// import ethanolPlant from '../images/SocialsImg/ethanol.jpeg';
+// import fertilizerPlant from '../images/SocialsImg/fertilizerPlant.jpeg';
 import { NavLink } from 'react-router-dom';
 
 function homePage() {
@@ -56,15 +56,16 @@ function homePage() {
                     </NavLink>
                 </div>
                 <div className="col-lg-6">
+                    <NavLink to="/ShopCategory">
                     <button>Shop Now</button>
+                    </NavLink>
                 </div>
             </div>
         </section>
        
-        <section id="socials">
+        {/* <section id="socials">
             <div className="collaboration">
                 <h2>Our Collaborations</h2>
-                {/* <p>We are in contact with some plants too whome we send the waste food for other benificiary productions</p> */}
                 <div className="row biogas">
                     <div className="col-lg-4">
                         <img src={biogasPlant} className='colabImg' alt="" />
@@ -103,7 +104,7 @@ function homePage() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
     </>
   )
 }

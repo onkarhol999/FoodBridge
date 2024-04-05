@@ -8,6 +8,7 @@ import DeliveryBoyForm from './components/DeliveryDashboard/DiliveryDashboard'
 import HomePage from './components/HomePage/homePage'
 import DeliveryBoy from './components/DeliveryBoyLogin/DeliveryBoyLogin'
 import ContactUs from './components/ContactUs/ContactUs'
+import ShoppingCategory from './components/ShoppingMain/ShoppingMain.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +19,7 @@ const router = createBrowserRouter(
     <Route path="Home" element={<HomePage/>} />
     <Route path="loginDB" element={<DeliveryBoy/>} />
     <Route path="Contact" element={<ContactUs/>} />
-
+    <Route path="ShopCategory" element={<ShoppingCategory/>}/>
     </Route>
   )
 );
