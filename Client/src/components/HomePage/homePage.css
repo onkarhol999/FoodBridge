@@ -1,0 +1,170 @@
+#landing{
+    padding: 3% 0%;
+    text-align: center;
+}
+.quote{
+    padding: 0% 15%;
+    font-family: 'Poppins';
+    font-size: 3rem;
+    font-weight: 700;
+    color: #273f20;
+}
+
+span{
+    color: red;
+}
+
+.carousel-inner {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the carousel items take up the full height */
+}
+
+.carousel-item {
+     text-align: center; /*Center the image horizontally */
+}
+
+.carousel-item{
+    height: 65vh;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+}
+
+.carouselBtn{
+    background-color: #00FF00;
+    border-radius: 15%;
+}
+
+#Help{
+    padding: 3% 15%;
+    justify-content: center;
+    text-align: center;
+    background-color: #87fd87;
+}
+
+#Help h2{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 2.5rem;
+    color:#003800;
+}
+
+#Help h3{
+    font-family: 'Montserrat';
+}
+
+#Help .row .col-lg-6 p{
+    font-weight: 700;
+}
+
+.HelpOpt{
+    position: relative;
+}
+
+.optImg{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.collage{
+    width: 72vh;
+    max-height: 435px;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background:rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content:hover{
+    opacity: 1;
+}
+
+.content p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.content button{
+    padding: 2% 3%;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border-radius: 15px;
+    background-color: #87fd87;
+    
+}
+
+.content button:hover{
+    color: #87fd87;
+    border: 2px solid #87fd87;
+    background: transparent ;
+}
+
+
+#socials{
+    margin-top: 2%;
+    padding: 3% 15%;
+    justify-content: center;
+    text-align: center;
+}
+
+#socials h2{
+    text-decoration: underline;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 2rem;
+    
+}
+
+#socials p{
+    font: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+#socials .colabImg{
+    width: 100%;
+}
+
+
+#socials .desctiption{
+    font-family: 'poppins';
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#socials .biogas{
+    border: 3px solid #87fd87;
+    padding: 2% 5px;
+    margin: 2% 0px;
+    border-radius: 15px;
+}
+
+#socials .ethanol{
+    border: 3px solid #87fd87;
+    padding: 2% 5px;
+    margin: 2% 0px;
+    border-radius: 15px;
+}
+
+#socials .fertilizer{
+    border: 3px solid #87fd87;
+    padding: 2% 5px;
+    margin: 2% 0px;
+    border-radius: 15px;
+}
