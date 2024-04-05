@@ -9,7 +9,7 @@ import potCollage from '../images/HelpOption/potteryCollage.png';
 import biogasPlant from '../images/SocialsImg/BiogasPlant.jpg';
 import ethanolPlant from '../images/SocialsImg/ethanol.jpeg';
 import fertilizerPlant from '../images/SocialsImg/fertilizerPlant.jpeg';
-
+import { NavLink } from 'react-router-dom';
 
 function homePage() {
   return (
@@ -45,6 +45,7 @@ function homePage() {
             </div>
         </section>
 
+     
         <section id="Help">
             <h2>Ways To Help</h2>
             <h3>“Together, we can make a difference in the lives of individuals and families facing food insecurity, one donation at a time.”</h3>
@@ -57,7 +58,9 @@ function homePage() {
                             <p>
                                 Become morsel contributer becomes a lifeline for someone facing hunger, offering not just sustenance but also hope and dignity.
                             </p>
+                            <NavLink to="/donation">
                             <button>Donate Food</button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -75,7 +78,7 @@ function homePage() {
                 </div>
             </div>
         </section>
-
+       
         <section id="socials">
             <div className="collaboration">
                 <h2>Our Collaborations</h2>
