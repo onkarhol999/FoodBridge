@@ -40,7 +40,7 @@ function Footer() {
             </div>
       </section>
       <section className="copyright">
-      &copy; copyright 2024 FoodBridge. All right reserbed
+      &copy; copyright 2024 FoodBridge. All right reserved
       </section>
     </>
   )
