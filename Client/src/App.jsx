@@ -7,16 +7,16 @@
 // import DeliveryDashboard from './components/DeliveryDashboard/DiliveryDashboard.jsx'
 
 
-function App() {
-  return (
-    <>
-      <Navbar/>
-      <HomePage/>
-      {/* <DonationForm/> */}
-      {/* <DeliveryDashboard/> */}
-      <Footer/>
-    </>
-  )
-}
+// function App() {
+//   return (
+//     <>
+//       <Navbar/>
+//       <HomePage/>
+//       {/* <DonationForm/> */}
+//       {/* <DeliveryDashboard/> */}
+//       <Footer/>
+//     </>
+//   )
+// }
 
 // export default App
