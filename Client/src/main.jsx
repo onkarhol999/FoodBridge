@@ -6,6 +6,8 @@ import Home from './components/HomePage/homePage'
 import DonationForm from './components/DonationUserData/DonationForm'
 import DeliveryBoyForm from './components/DeliveryDashboard/DiliveryDashboard'
 import HomePage from './components/HomePage/homePage'
+import DeliveryBoy from './components/DeliveryBoyLogin/DeliveryBoyLogin'
+import ContactUs from './components/ContactUs/ContactUs'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +16,9 @@ const router = createBrowserRouter(
     <Route path="donation" element={<DonationForm/>} />
     <Route path="delivery" element={<DeliveryBoyForm/>} />
     <Route path="Home" element={<HomePage/>} />
+    <Route path="loginDB" element={<DeliveryBoy/>} />
+    <Route path="Contact" element={<ContactUs/>} />
+
     </Route>
   )
 );

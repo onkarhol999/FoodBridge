@@ -11,7 +11,7 @@ function Navbar() {
           <div className="container-fluid">
               <a className="navbar-brand" href="#">
                   <img className='navLogo mx-2' src={logo1}/>
-                  <NavLink to="/Home">
+                  <NavLink to="/Home" style={{ textDecoration: 'none' }}>
                   <p>FoodBridge </p>
                   </NavLink>
               </a>
@@ -20,20 +20,25 @@ function Navbar() {
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav  ms-auto order-5 mx-5 nav-underline">
+                  <NavLink to="/Home" style={{ textDecoration: 'none' }}>
                       <li className="nav-item mx-3">
-                      <a className="nav-link" aria-current="page" href="#">How To Help</a>
+                      <a className="nav-link" aria-current="page" href="#">Home</a>
                       </li>
+                      </NavLink>
                       <li className="nav-item mx-3">
                       <a className="nav-link" href="#">What we do?</a>
                       </li>
+                      <NavLink to="/ContactUs" style={{ textDecoration: 'none' }}>
                       <li className="nav-item mx-3">
                       <a className="nav-link" href="#">Contact Us</a>
                       </li>
-                      <NavLink to="/delivery">
-                      <li className="nav-item mx-3">
-                      <a className="nav-link" href="#">Admin Login</a>
-                      </li>
                       </NavLink>
+                      <NavLink to="/loginDB" style={{ textDecoration: 'none' }}>
+                          <li className="nav-item mx-3">
+                            <a className="nav-link" href="#">Delivery Boy Login</a>
+                          </li>
+                        </NavLink>
+
                   </ul>
               </div>
           </div>
