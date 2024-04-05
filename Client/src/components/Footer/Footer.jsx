@@ -1,17 +1,19 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import logo from '../images/FoodBridge.png';
 import '../Footer/Footer.css'
+import { FaPhone } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
 
 function Footer() {
   return (
     <>
       <section className="footer">
             <div className="row">
-                <div className="col-lg-4">
+                <div className="col-lg-4 contacts">
                     <img src={logo} className='footerLogo'/>
                     <div className="contactDetails">
-                    <p><span>📞</span>4879865489</p>
-                    <p><span>✉️</span>foodbridge@gmail.com</p>
+                    <p><span><FaPhone style={{ fontSize: '20px' }} /></span>4879865489</p>
+                    <p><span><IoIosMail style={{ fontSize: '24px' }} /></span>foodbridge@gmail.com</p>
                     </div>
                 </div>
                 <div className="col-lg-8">
