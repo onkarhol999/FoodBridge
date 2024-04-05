@@ -209,6 +209,7 @@ const BarChart = ({}) => {
             <td>3</td>
             <td>Vegetable Stir Fry</td>
           </tr>
+
         </tbody>
       </table>
     </div>

@@ -13,6 +13,7 @@ import Decorative from './components/ShoppingPages/Decorative.jsx'
 import EarthenPots from './components/ShoppingPages/EarthenPots.jsx'
 import Edible from './components/ShoppingPages/Edible.jsx';
 import Fashion from './components/ShoppingPages/Fashion.jsx'
+import AdminDashboard from './components/AdminDashboard/AdminDashboard.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +29,8 @@ const router = createBrowserRouter(
     <Route path="earthenPots" element={<EarthenPots/>}/>
     <Route path="edible" element={<Edible/>}/>
     <Route path="fashion" element={<Fashion/>}/>
+    <Route path="adminDashboard" element={<AdminDashboard/>}/>
+
     </Route>
   )
 );
