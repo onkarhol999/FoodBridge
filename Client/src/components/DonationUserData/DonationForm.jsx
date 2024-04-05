@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; // eslint-disable-line
+import '../DonationUserData/DonationForm.css';
 
 export default function Form() {
 
@@ -36,54 +37,55 @@ export default function Form() {
   setDescription("");
 }
   return (
-    <div>
+    <section className='donationForm'>
+    <div className='form'>
+      <h2 >Donation Form</h2>
       <form onSubmit={collectData}>
-        <h2 >Donation Form</h2>
-        <div>
-            <label>Name</label>
-            <input type='text'
+        <div className='mb-3'>
+            <label className='form-label'>Name</label>
+            <input  className='form-control' type='text'
             value={name}
             onChange={(e)=>setName(e.target.value)}/>
         </div>
-        <div>
-            <label>Address</label>
-            <input type='text'
+        <div className='mb-3'>
+            <label className='form-label'>Address</label>
+            <input className='form-control' type='text'
              value={address}
              onChange={(e)=>setAddress(e.target.value)}/>
         </div>
-        <div>
-            <label >Pin Code</label>
-            <input type='Number'
+        <div className='mb-3'>
+            <label className='form-label' >Pin Code</label>
+            <input className='form-control' type='Number'
              value={pincode}
              onChange={(e)=>setPincode(e.target.value)}/>
         </div>
-        <div>
-            <label>Landmark</label>
-            <input type='text'
+        <div className='mb-3'>
+            <label className='form-label'>Landmark</label>
+            <input className='form-control' type='text'
              value={landmark}
              onChange={(e)=>setLandmark(e.target.value)}/>
         </div>
-        <div >
-            <label >Contact Number</label>
-            <input type='text'
+        <div  className='mb-3'>
+            <label className='form-label' >Contact Number</label>
+            <input className='form-control' type='text'
              value={contact}
              onChange={(e)=>setContact(e.target.value)}/>
         </div>
-        <div>
-            <label>Food Quantity (in Kg)</label>
-            <input type='Number'
+        <div className='mb-3'>
+            <label className='form-label'>Food Quantity</label>
+            <input className='form-control' type='Number' placeholder='(in Kg)'
              value={quantity}
              onChange={(e)=>setQuantity(e.target.value)}/>
         </div>
-        <div >
-            <label >Description About Food</label>
-            <input type='text'
+        <div className='mb-3' >
+            <label className='form-label' >Description About Food</label>
+            <input className='form-control' type='text'
              value={description}
              onChange={(e)=>setDescription(e.target.value)}/>
         </div>
-          <button type='submit'>Submit</button>
+        <button className='button' type='submit'>Submit</button>
       </form>
-  
     </div>
+    </section>
   )
 }
