@@ -2,9 +2,11 @@ import React from 'react'; //eslint-disable-line no-unused-vars
 import './ShoppingMain.css';
 import ceramic1 from '../images/ShoppingCategory/Earthen.jpeg';
 import ceramic2 from '../images/ShoppingCategory/ceramics2.jpg';
+import ShoppingCategory from '../ShoppingCategory/ShoppingCategory';
 function Ceramics() {
   return (
     <main>
+        <ShoppingCategory/>
         <h2>Handmade Earthen Pots</h2>
         <div className="row">
             <div className="col-md-4">
