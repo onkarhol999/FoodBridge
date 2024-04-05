@@ -1,6 +1,7 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import '../navbar/Navbar.css';
 import logo1 from '../images/FoodBridge.png'
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -10,7 +11,9 @@ function Navbar() {
           <div className="container-fluid">
               <a className="navbar-brand" href="#">
                   <img className='navLogo mx-2' src={logo1}/>
+                  <NavLink to="/Home">
                   <p>FoodBridge </p>
+                  </NavLink>
               </a>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -26,9 +29,11 @@ function Navbar() {
                       <li className="nav-item mx-3">
                       <a className="nav-link" href="#">Contact Us</a>
                       </li>
+                      <NavLink to="/delivery">
                       <li className="nav-item mx-3">
                       <a className="nav-link" href="#">Admin Login</a>
                       </li>
+                      </NavLink>
                   </ul>
               </div>
           </div>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './Style.css'
+import userIcon from '../images/DeliveryBoy/user.png';
 
 const DeliveryInfo = () => {
     const [users, setUsers] = useState([]);
@@ -28,8 +30,19 @@ const DeliveryInfo = () => {
     };
 
     return (
-        <div>
+        <div className='dashboard'>
             <h2>Delivery Information</h2>
+            <div className="row">
+                <div className="col-lg-4 deliveryIcon">
+                    <img src={userIcon} alt="" />
+                </div>
+                <div className="col-lg-8 deliveryBoyInfo">
+                    <h5>Name:</h5> <p>Ramesh Deshmukh</p><br />
+                    <h5>Id: </h5> <p>548112</p><br />
+                    <h5>no. of delivery: </h5> <p>28</p> <br />
+                </div>
+            </div>
+            <hr />
             <table>
                 <thead>
                     <tr>

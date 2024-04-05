@@ -1,0 +1,67 @@
+/* styles.css */
+.dashboard{
+    padding: 3% 15%;
+    text-align: center;
+}
+
+.dashboard h2{
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+.dashboard .row{
+    margin: 2% 0%;
+    border-bottom: 2px solid #273f20;
+}
+
+.deliveryBoyInfo{
+    text-align: left;
+}
+
+.deliveryBoyInfo h5{
+    display: inline-block;
+}
+
+.deliveryBoyInfo p{
+    display: inline-block;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #273f20;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #87fd87;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* Button colors */
+  button.task {
+    background-color: red;
+  }
+  
+  button.completed {
+    background-color: green;
+  }
+  

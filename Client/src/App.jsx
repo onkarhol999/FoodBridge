@@ -4,18 +4,19 @@
 // import HomePage from './components/HomePage/homePage.jsx';
 // // import DiliveryDashboard from './components/DeliveryDashboard/DiliveryDashboard.jsx'
 // import Footer from './components/Footer/Footer.jsx';
+// import DeliveryDashboard from './components/DeliveryDashboard/DiliveryDashboard.jsx'
 
 
-// function App() {
-//   return (
-//     <>
-//       <Navbar/>
-//       <HomePage/>
-//       {/* <DonationForm/> */}
-//       {/* <DiliveryDashboard/> */}
-//       <Footer/>
-//     </>
-//   )
-// }
+function App() {
+  return (
+    <>
+      <Navbar/>
+      <HomePage/>
+      {/* <DonationForm/> */}
+      {/* <DeliveryDashboard/> */}
+      <Footer/>
+    </>
+  )
+}
 
 // export default App
