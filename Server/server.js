@@ -1,3 +1,4 @@
+// server.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -28,6 +29,26 @@ app.get('/getUsers', async (req, res) => {
     } catch (error) {
         console.error('Error fetching user data:', error);
         res.status(500).json({ error: 'Error fetching user data' });
+    }
+});
+
+app.post("/addCompletedDelivery", async (req, res) => {
+    try {
+        let delivery = new CompletedDelivery(req.body); // Assuming you have a CompletedDelivery model
+        let result = await delivery.save();
+        res.send(result);
+    } catch (error) {
+        res.status(500).send(error);
+    }
+});
+
+app.delete("/removeDelivery/:id", async (req, res) => {
+    try {
+        const removedDelivery = await User.findByIdAndRemove(req.params.id);
+        res.json(removedDelivery);
+    } catch (error) {
+        console.error('Error removing delivery:', error);
+        res.status(500).json({ error: 'Error removing delivery' });
     }
 });
 
