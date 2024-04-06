@@ -1,5 +1,6 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import './WhatWeDo.css'; 
+import workFlow from '../images/workflow.png';
 
 function WhatWeDo() {
   return (
@@ -31,6 +32,8 @@ function WhatWeDo() {
                 By purchasing goods from our online store, you are not only acquiring unique and high-quality products but also
                 supporting sustainable livelihoods for villagers. Your patronage directly benefits artisans and their families, providing them with a source of income and economic stability. We believe in the power of fair trade and ethical sourcing to uplift communities and preserve traditional craftsmanship for future generations.
                 </p>
+                <h4>The flow we work in:</h4>
+                <img src={workFlow} alt="" />
             </div>
       </main>
     </>

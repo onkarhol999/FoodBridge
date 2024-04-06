@@ -60,7 +60,7 @@ function homePage() {
         </section>
        
         <section className="workflow">
-            <h2>The flow we follow</h2>
+            <h2>The Food is Safe with us</h2>
             <img src={wflow} alt="" />
         </section>
     </>

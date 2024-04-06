@@ -31,7 +31,7 @@ const BarChart = () => {
       datasets: [
         {
           label: 'Financial Overview',
-          data: [300, 200, 500],
+          data: [500, 400, 100],
           backgroundColor: ['blue', 'green', 'yellow'],
           borderWidth: 1
         }
@@ -100,11 +100,13 @@ const BarChart = () => {
     <div className='board'>
       <h2 className='headingOf'>Admin Dashboard</h2>
       <div className="chart-container"> 
-        <div className='c1'> 
+        <div className='c1 charts'> 
           <canvas className="chart-canvas1" ref={barChartRef} />
+        <h2>Monthly Donation</h2>
         </div>
-        <div>
+        <div className='charts'>
           <canvas className="chart-canvas2" ref={doughnutChartRef} />
+        <h2>Monthly Expences</h2>
         </div>
       </div>
       <DeliveryInfo />

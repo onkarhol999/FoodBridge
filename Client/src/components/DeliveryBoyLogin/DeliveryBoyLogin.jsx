@@ -36,7 +36,7 @@ const LoginForm = () => {
           />
         </div>
         <NavLink to="/delivery">
-          <button type="submit">Login</button>
+          <button className='loginBtn' type="submit">Login</button>
         </NavLink>
       </form>
     </div>

@@ -13,6 +13,7 @@
 .chart-canvas1 {
     width: 500px; /* Increased width */
     height: 200px; /* Increased height */
+    margin-bottom: 7%;
 }
 
 .chart-canvas2 {
@@ -35,4 +36,8 @@
 .data-table {
     margin-right: 30px; /* Adjusted margin-top */
     border-radius: 15px;
+}
+
+.charts {
+    text-align: center;
 }

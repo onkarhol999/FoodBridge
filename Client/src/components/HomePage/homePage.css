@@ -96,4 +96,9 @@ span{
     font-weight: 900;
     font-size: 2.5rem;
     color:#273f20;
+    margin-bottom: 2%;
+}
+
+.workflow img{
+    width: 70%;
 }
