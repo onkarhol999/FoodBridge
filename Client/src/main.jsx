@@ -8,13 +8,12 @@ import DeliveryBoyForm from './components/DeliveryDashboard/DiliveryDashboard'
 import HomePage from './components/HomePage/homePage'
 import DeliveryBoy from './components/DeliveryBoyLogin/DeliveryBoyLogin'
 import ContactUs from './components/ContactUs/ContactUs'
-import AdminDashboard from './components/AdminDashboard/AdminDashboard'
+import AdminDashboard from './components/AdminDashboard/AdminDashboard.jsx'
 import ShoppingCategory from './components/ShoppingMain/ShoppingMain.jsx';
 import Decorative from './components/ShoppingPages/Decorative.jsx'
 import EarthenPots from './components/ShoppingPages/EarthenPots.jsx'
 import Edible from './components/ShoppingPages/Edible.jsx';
 import Fashion from './components/ShoppingPages/Fashion.jsx'
-import AdminDashboard from './components/AdminDashboard/AdminDashboard.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
