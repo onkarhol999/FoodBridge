@@ -16,7 +16,7 @@ const BarChart = () => {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [
         {
-          label: 'Sales',
+          label: 'Donated',
           data: [65, 59, 80, 81, 56, 55, 40],
           backgroundColor: 'red',
           borderColor: 'rgba(0, 0, 0, 1)',
