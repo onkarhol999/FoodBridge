@@ -1,8 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Chart from 'chart.js/auto';
+import axios from 'axios'; // Import axios
+import userIcon from '../images/DeliveryBoy/user.png';
 import './AdminDashboard.css';
 
-const BarChart = ({}) => {
+const BarChart = () => {
   const barChartRef = useRef(null);
   const doughnutChartRef = useRef(null);
   let barChart = null;
@@ -97,19 +99,74 @@ const BarChart = ({}) => {
   return (
     <div className='board'>
       <h2 className='headingOf'>Admin Dashboard</h2>
-       
-      
       <div className="chart-container"> 
         <div className='c1'> 
           <canvas className="chart-canvas1" ref={barChartRef} />
         </div>
-       
         <div>
           <canvas className="chart-canvas2" ref={doughnutChartRef} />
         </div>
-     
       </div>
-     
+      <DeliveryInfo />
+    </div>
+  );
+};
+
+const DeliveryInfo = () => {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+      const fetchUsers = async () => {
+          try {
+              const response = await axios.get('http://localhost:4000/getUsers');
+              setUsers(response.data);
+          } catch (error) {
+              console.error('Error fetching users:', error);
+          }
+      };
+
+      fetchUsers();
+  }, []);
+
+  const handleMoveUser = (userId) => {
+      const updatedUsers = users.map(user => {
+          if (user._id === userId) {
+              return { ...user, completed: true };
+          }
+          return user;
+      });
+      setUsers(updatedUsers);
+  };
+
+  return (
+    <div className='dashboard'>
+      <h2>Delivery Information</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Pincode</th>
+                  <th>Landmark</th>
+                  <th>Food Quantity</th>
+                  <th>Description</th>
+                  
+              </tr>
+          </thead>
+          <tbody>
+              {users.map(user => (
+                  <tr key={user._id}>
+                      <td>{user.name}</td>
+                      <td>{user.address}</td>
+                      <td>{user.pincode}</td>
+                      <td>{user.landmark}</td>
+                      <td>{user.quantity}</td>
+                      <td>{user.description}</td>
+                      
+                  </tr>
+              ))}
+          </tbody>
+      </table>
     </div>
   );
 };
