@@ -4,11 +4,7 @@ import car1 from '../images/CarouselImages/Car1.jpg';
 import car2 from '../images/CarouselImages/Car2.jpg';
 import car3 from '../images/CarouselImages/Car3.jpg';
 import car4 from '../images/CarouselImages/Car4.jpg';
-// import donateFood from '../images/HelpOption/DonateFood.jpg';
-// import shopNow from '../images/HelpOption/ShopNow.jpeg';
-// import biogasPlant from '../images/SocialsImg/BiogasPlant.jpg';
-// import ethanolPlant from '../images/SocialsImg/ethanol.jpeg';
-// import fertilizerPlant from '../images/SocialsImg/fertilizerPlant.jpeg';
+import wflow from '../images/workflow.png';
 import { NavLink } from 'react-router-dom';
 
 function homePage() {
@@ -63,48 +59,10 @@ function homePage() {
             </div>
         </section>
        
-        {/* <section id="socials">
-            <div className="collaboration">
-                <h2>Our Collaborations</h2>
-                <div className="row biogas">
-                    <div className="col-lg-4">
-                        <img src={biogasPlant} className='colabImg' alt="" />
-                    </div>
-                    <div className="col-lg-8">
-                        <p className='desctiption'>Our collaboration with biogas production plants breathes new life into surplus food. By sending waste food to these facilities, 
-                            we support the generation of biogas—a clean and renewable energy source. Through anaerobic digestion, organic waste is transformed 
-                            into biogas, reducing greenhouse gas emissions and powering homes and businesses sustainably. Join us in turning waste into energy 
-                            and making a positive impact on the environment.</p>
-                    </div>
-                </div>
-                <div className="row ethanol">
-                    <div className="col-lg-8">
-                        <p className='desctiption'>
-                        At our ethanol production partners, waste food finds a new purpose as biofuel. Through advanced fermentation
-                        processes, surplus food materials are converted into ethanol—an eco-friendly alternative to traditional fossil fuels. By collaborating 
-                        with ethanol production plants, we not only reduce food waste but also contribute to cleaner transportation and a greener future. 
-                        Together, let's drive towards sustainability by turning waste into fuel.
-                        </p>
-                    </div>
-                    <div className="col-lg-4">
-                        <img src={ethanolPlant} className='colabImg' alt="" />
-                    </div>
-                </div>    
-                <div className="row fertilizer">
-                    <div className="col-lg-4">
-                        <img src={fertilizerPlant} className='colabImg' alt="" />
-                    </div>
-                    <div className="col-lg-8">
-                        <p className='desctiption'>
-                        Our partnership with fertilizer production plants allows us to close the loop on food waste 
-                        and promote soil health. By sending surplus food to these facilities, we facilitate the creation of nutrient-rich fertilizers. These 
-                        organic fertilizers enrich the soil, enhance crop yields, and support sustainable agricultural practices. Join us in nourishing the earth 
-                        and fostering a more sustainable food system by repurposing waste food into valuable fertilizers.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section> */}
+        <section className="workflow">
+            <h2>The flow we follow</h2>
+            <img src={wflow} alt="" />
+        </section>
     </>
   )
 }

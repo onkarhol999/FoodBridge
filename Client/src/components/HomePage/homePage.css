@@ -86,55 +86,14 @@ span{
     background: transparent ;
 }
 
-
-#socials{
-    margin-top: 2%;
-    padding: 3% 15%;
-    justify-content: center;
+.workflow{
+    margin: 2% 0px;
     text-align: center;
 }
 
-#socials h2{
-    text-decoration: underline;
+.workflow h2{
     font-family: 'Roboto';
     font-weight: 900;
-    font-size: 2rem;
-    
-}
-
-#socials p{
-    font: 'Montserrat';
-    font-size: 1.5rem;
-}
-
-#socials .colabImg{
-    width: 100%;
-}
-
-
-#socials .desctiption{
-    font-family: 'poppins';
-    font-size: 1.5rem;
-    text-align: left;
-}
-
-#socials .biogas{
-    border: 3px solid #87fd87;
-    padding: 2% 5px;
-    margin: 2% 0px;
-    border-radius: 15px;
-}
-
-#socials .ethanol{
-    border: 3px solid #87fd87;
-    padding: 2% 5px;
-    margin: 2% 0px;
-    border-radius: 15px;
-}
-
-#socials .fertilizer{
-    border: 3px solid #87fd87;
-    padding: 2% 5px;
-    margin: 2% 0px;
-    border-radius: 15px;
+    font-size: 2.5rem;
+    color:#273f20;
 }
